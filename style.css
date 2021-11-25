@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+:root{
+    /* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    /* ### Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+body{
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Red Hat Display;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+}
+.container{
+    background-color: var(--Very-pale-blue);
+    min-height: 33rem;
+    min-width: 18rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.dis h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--Dark-blue);
+    margin: 1rem;
+}
+.dis h1:hover{
+    color: var(--Bright-blue);
+    cursor: pointer;
+}
+.dis p{
+    margin: 0 2rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    line-height: 1.5em;
+}
+.card a:last-child:hover{
+    text-decoration: none;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 2rem;
+    background-color: hsl(225, 100%, 94%,50%);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+}
+.stack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stack h3:first-child{
+    font-weight: 800;
+}
+.stack h3:last-child{
+    color: var(--Desaturated-blue);
+    font-weight: 300;
+}
+.btn{
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: 800;
+    color: var(--Very-pale-blue);
+    width: calc(100% - 4rem);
+    display: block;
+    margin: 1rem 2rem;
+    padding: 0.7rem;
+    box-shadow: 0 10px 20px -4px  hsl(245, 75%, 52%,50%);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: hsl(245, 75%, 52%,90%);
+    transition: 0.2s;
+}
+.dis .cancel{
+    display: block;
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--Dark-blue);
+    font-weight: 800;
+}
+.dis .cancel:hover{
+    color: var(--Bright-blue);
+}
+
+
+@media (min-width:500px) {
+    .container{
+        width: 21rem;
+    }
+}
